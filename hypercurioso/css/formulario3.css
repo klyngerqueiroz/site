@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: UnifrakturCook-bold;
+    src: url(/fontes/UnifrakturCook-Bold.ttf);
+}
+@font-face {
+    font-family: ShadowsIntoLight-Regular;
+    src: url(/fontes/ShadowsIntoLight-Regular.ttf);
+}
+
+@font-face {
+    font-family: Unbounded-Variablefont;
+    src: url(/fontes/Unbounded-VariableFont_wght.ttf);
+}
+
+*{
+    outline: 0;
+}
+.sp{
+    background-color:transparent;
+}
+#link, a{
+    font-family: UnifrakturCook-bold;
+    color:#fff;
+    font-size: 1em;
+}
+p{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-image: url('https://www.ead.iapajus.com.br/metronic/assets/media/logos/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    
+}
+
+section{
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 215, 136);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    
+}
+
+#form{
+   width: 94%;
+   height: 91%;
+   padding: 25px;
+   
+}
+h2{
+    font-family: Unbounded-Variablefont;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: center;
+    color:rgb(3, 187, 119)
+    
+}
+/**INPUTS*/
+#btn-rodape-form{
+    display: flex;
+    justify-content: right;
+}
+
+#btn-rodape-form > button[type=submit]{
+    width: 20%;
+    height: 40px;
+    margin-top: 40px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid rgb(0, 215, 136);
+    border-radius: 5px;
+    background-color:rgb(0, 215, 136); ;
+    
+    
+}
+#btn-rodape-form > button[type=reset]{
+    width: 20%;
+    height: 40px;
+    margin-top: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.493);
+    color: #fff;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+  
+    
+    
+}
+#btn-rodape-form  > button[type="submit"]:hover{
+    cursor: pointer;
+    color: #fff;
+
+    background-color:rgba(44, 240, 168, 0.178);
+   
+}
+#btn-rodape-form  > button[type="reset"]:hover{
+    cursor: pointer;
+    background-color: rgb(0, 215, 136);
+
+    color: #fff;
+   
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+#textFormEmail{
+    color: rgb(0, 215, 136);
+    font-size: .8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#textForm{
+    color: rgb(0, 215, 136);
+    margin-top: 10px;
+    font-size: .8em;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+/*---------Estilos do input----------*/
+div.campo{
+    margin: 5px 0px;
+    width: 100%;
+    height: 39px;
+    border: 1px solid rgba(49, 49, 49, 0.295);
+    background-color: #fff;
+   
+} 
+
+#icon-material > i{
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 215, 136);
+    padding: 12px;
+    font-size: 32px;
+    
+   
+
+}
+div.campo > input[type='email']{
+    width:100%;
+    height: 100%;
+    border: none;
+ 
+
+}
+div.campo > input:hover{
+    transition-delay: 1s;
+    color: #000;
+   
+
+}
+
+
+/*********estilização do botao lateral***********/
+
+.btn-responsivo2{
+    display: flex;
+    justify-content: center;
+    bottom:20px;
+    right: 30px;
+  
+    }
+    /*
+    span#botao-menu{
+      font-size: 55px;
+      color: rgb(0, 215, 136);
+      cursor: pointer;
+      display: block;
+      
+    }*/
+    ul{
+      list-style: none;
+      padding: 10px;
+    }
+    li{
+        display: inline-block;
+    }
+    button{
+      outline: none;
+      background-color:#223A59;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      margin:5px;
+
+      color: #fff;
+      
+     
+    }
+    button:hover{
+      width: 55px;
+      height: 55px;
+
+      background-color: transparent;
+      cursor: pointer;
+
+      -webkit-transition: .2s ease-out;
+      -moz-transition: .2s ease-out;
+      transition: .2s ease-out;
+      
+
+    }
+
+/**media query**/
+
+ @media (max-width: 1200px){
+    html{
+        font-size: 90%;
+
+    }
+    section{
+        width: 600px;
+        height: 320px;
+    }
+    #form{
+        width: 95%;
+        height:90%;
+        padding: 15px;
+    }
+   
+ }
+
+  @media (max-width: 992px) {
+    html{
+        font-size: 70%;
+    }
+    section{
+        width: 70%;
+        height: 60%;
+    }
+    #form{
+        width: 95%;
+        height:60%;
+        padding: 15px;
+    }
+    div.campo > input[type='email']{
+        width:100%;
+        height:100%;
+       
+       
+     }
+    
+  }
+  @media  (max-width: 778px) {
+    html { 
+        font-size: 70%;
+    }
+
+    section{
+        width: 70%;
+        height: 50%;
+    }
+
+    img {
+        width: 60%;
+        height:60%;
+        }
+       
+    
+        #form{
+            width: 89%;
+            height:60%;
+            padding: 15px;
+        }
+      #btn-rodape-form{
+        display:flex;
+        flex-wrap: wrap;
+                
+      }
+        #btn-rodape-form > button[type="submit"]{
+            height: 39px;
+            width: 100%;
+          
+        }
+        
+        #btn-rodape-form> button[type="reset"]{
+            height: 39px;
+            width: 100%;
+            margin-top: 1px;
+           
+        }
+        div.campo > input[type='email']{
+            width:100%;
+            height:100%;
+           
+           
+         }
+
+  
+}
+
+@media(max-width:471px){
+    html{
+        font-size: 30%;
+    }
+    section{
+        width: 80%;
+        height: 350px;
+    }
+     
+    #form{
+        width: 86%;
+        padding-top: 60px;
+       
+    }/*
+    .btn-responsivo2{
+        position:fixed;
+        bottom:200px;
+        right: 10px;
+    }*/
+    div.campo > input[type='email']{
+       width:100%;
+       height:100%;
+      
+      
+    }
+    #btn-rodape-form > button[type="submit"]{
+        height: 39px;
+        width: 100%;
+       
+        
+    }
+    
+    #btn-rodape-form > button[type="reset"]{
+        display: none;
+       
+    }
+   
+}
+
